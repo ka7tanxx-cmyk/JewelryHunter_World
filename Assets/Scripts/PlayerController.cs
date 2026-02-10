@@ -1,5 +1,6 @@
 using UnityEngine;//â‘Î‚É•K—v
 
+
 public class PlayerController : MonoBehaviour@//â‘Î‚ÉŒp³‚·‚é
 {
     Rigidbody2D rbody;//Rigidbody2DŒ^‚Ì•Ï”
@@ -20,7 +21,6 @@ public class PlayerController : MonoBehaviour@//â‘Î‚ÉŒp³‚·‚é
     public string deadAnime = "Dead";
     string nowAnime = "";
     string oldAnime = "";
-
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -148,6 +148,12 @@ public class PlayerController : MonoBehaviour@//â‘Î‚ÉŒp³‚·‚é
 
         rbody.linearVelocity = new Vector2(0, 0);           // ‘¬“x‚ğ0‚É‚µ‚Ä‹­§’â~
     }
+    public float GetAxisH()
+    {
+        return axisH;
+    }
 }
+
+
 
 

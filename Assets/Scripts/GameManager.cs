@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
         //リスタート
     public void Restart()
     {
-        Debug.Log("リスタート");
+        //Debug.Log("リスタート");
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
