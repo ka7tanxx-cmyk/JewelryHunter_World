@@ -27,6 +27,9 @@ public class UIController : MonoBehaviour
     public GameObject scoreText;        // スコアテキスト
     public int stageScore = 0;          // ステージスコア
 
+    // スコア追加
+    public static int totalScore;       // 合計スコア
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -71,7 +74,11 @@ public class UIController : MonoBehaviour
             //時間カウント停止
             if (timeController != null)
             {
-                timeController.IsTimeOver();
+                timeController.IsTimeOver(); //停止フラグ
+
+                // 整数に型変換することで小数を切り捨てる
+                int time = (int)timeController.GetDisplayTime();
+                GameManager.totalScore += time * 10; // 残り時間をスコアに加える
             }
         }
         else if (GameManager.gameState == GameState.GameOver)
@@ -112,4 +119,21 @@ public class UIController : MonoBehaviour
             }
         }
     }
+
+    // 現在スコアのUI表示更新
+    void UpdateScore()
+    {
+        int currentScore = stageScore + GameManager.totalScore;
+        scoreText.GetComponent<TextMeshProUGUI>().text = currentScore.ToString();
+    }
+
+    // プレイヤーから呼び出される 獲得スコアを追加した上でのUI表示更新
+    public void UpdateScore(int score)
+    {
+        stageScore += score;
+        int currentScore = stageScore + GameManager.totalScore;
+        scoreText.GetComponent<TextMeshProUGUI>().text = currentScore.ToString();
+    }
+
 }
+
