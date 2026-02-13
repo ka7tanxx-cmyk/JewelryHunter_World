@@ -50,6 +50,7 @@ public class UIController : MonoBehaviour
         //プレイヤー情報とPlayerControllerコンポーネントの取得
         player = GameObject.FindGameObjectWithTag("Player");
         playerController = player.GetComponent<PlayerController>();
+        UpdateScore(); //スコア表示更新
     }
 
     // 画像を非表示にする

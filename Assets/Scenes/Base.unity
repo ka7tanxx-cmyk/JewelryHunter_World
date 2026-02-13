@@ -2730,7 +2730,6 @@ GameObject:
   - component: {fileID: 1191932416}
   - component: {fileID: 1191932418}
   - component: {fileID: 1191932417}
-  - component: {fileID: 1191932419}
   m_Layer: 5
   m_Name: ScoreBord
   m_TagString: Untagged
@@ -2780,7 +2779,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: -6533585097555431621, guid: 32aa4dc83e34d2e408ace58cd813887e, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -2796,28 +2795,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1191932415}
   m_CullTransparentMesh: 1
---- !u!114 &1191932419
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1191932415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67e3c92f24a914b49a835944bf430a53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIController
-  mainImage: {fileID: 0}
-  gameOverSpr: {fileID: 0}
-  gameClearSpr: {fileID: 0}
-  panel: {fileID: 0}
-  restartButton: {fileID: 0}
-  nextButton: {fileID: 0}
-  timeBar: {fileID: 0}
-  timeText: {fileID: 0}
-  scoreText: {fileID: 1743942026}
-  stageScore: 0
 --- !u!1 &1197593812
 GameObject:
   m_ObjectHideFlags: 0
@@ -2859,7 +2836,7 @@ MonoBehaviour:
   nextButton: {fileID: 584614693}
   timeBar: {fileID: 23895145}
   timeText: {fileID: 834494115}
-  scoreText: {fileID: 0}
+  scoreText: {fileID: 1743942026}
   stageScore: 0
 --- !u!114 &1197593814
 MonoBehaviour:
@@ -3067,7 +3044,7 @@ GameObject:
   - component: {fileID: 1743942029}
   - component: {fileID: 1743942028}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: 'ScoreText '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3381,7 +3358,6 @@ GameObject:
   - component: {fileID: 1967025183}
   - component: {fileID: 1967025186}
   - component: {fileID: 1967025185}
-  - component: {fileID: 1967025184}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -3410,28 +3386,6 @@ RectTransform:
   m_AnchoredPosition: {x: -51.859985, y: -95.66998}
   m_SizeDelta: {x: 59.26, y: -17.2}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1967025184
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1967025182}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67e3c92f24a914b49a835944bf430a53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIController
-  mainImage: {fileID: 1257975874}
-  gameOverSpr: {fileID: 21300000, guid: 38935bd95ff618e45821253c5871c83e, type: 3}
-  gameClearSpr: {fileID: 21300000, guid: 4bb655892e2301e4caa2bbad1fe2c7b1, type: 3}
-  panel: {fileID: 1967025182}
-  restartButton: {fileID: 1945457670}
-  nextButton: {fileID: 584614693}
-  timeBar: {fileID: 0}
-  timeText: {fileID: 0}
-  scoreText: {fileID: 0}
-  stageScore: 0
 --- !u!114 &1967025185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4097,6 +4051,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6215420392087767904, guid: a0904789a4f170f439ac80592c3c89c7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6836732689664094317, guid: a0904789a4f170f439ac80592c3c89c7, type: 3}
+      propertyPath: isForceScrollX
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7858911790801761892, guid: a0904789a4f170f439ac80592c3c89c7, type: 3}
