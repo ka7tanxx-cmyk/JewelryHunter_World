@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7947954360895782883}
   - component: {fileID: 27653023250227559}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SubBack1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8406051402546762077}
   - component: {fileID: 3134671767851576651}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Back_Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -192,7 +192,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1409242414742305037}
   - component: {fileID: 2661743407765975742}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SubBack2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -284,7 +284,7 @@ GameObject:
   - component: {fileID: 3310760164643445076}
   - component: {fileID: 2537534794958649236}
   - component: {fileID: 2741617503674195892}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WallObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -411,7 +411,7 @@ GameObject:
   - component: {fileID: 1631607850612145229}
   - component: {fileID: 2754347936616966676}
   - component: {fileID: 6836732689664094317}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -560,7 +560,7 @@ MonoBehaviour:
   subBack1: {fileID: 1351291486921248041}
   subBack2: {fileID: 4322433891065345154}
   subBackScrollSpeed: 0.0001
-  isForceScrollX: 1
+  isForceScrollX: 0
   forceScrollSpeedX: 0.5
   isForceScrollY: 0
   forceScrollSpeedY: 0.5
@@ -574,7 +574,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6160069366786231657}
   - component: {fileID: 3328641521781726587}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DeadObject
   m_TagString: Dead
   m_Icon: {fileID: 0}
